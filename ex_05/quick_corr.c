@@ -4,7 +4,7 @@
 
 #define SWAP(x,y) { int t = *x; *x = *y; *y = t; }
 
-#define PRINTINT(x) printf("%d\t", x);
+#define PRINTINT(x) printf("%d", x);
 
 #define TAB "\t"
 
@@ -44,6 +44,7 @@ void printArray(int arr[], int size)
     int i;
     FOR(i,0,size-1,i++){
         PRINTINT(arr[i]);
+        printf(TAB);
     }
     printf(NEWLINE);
 }
